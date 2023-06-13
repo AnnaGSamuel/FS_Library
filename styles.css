@@ -1,0 +1,77 @@
+.nav{
+	background-color:crimson;
+	color:white;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+.logo {
+    padding:10px 30px;
+	letter-spacing:2px;
+	font-size:20;
+	cursor:pointer;
+
+}
+.navlinks{
+	float:right;
+	padding-right:30px;
+	cursor:pointer;
+	
+	
+}
+.navlinks ul li{
+	display:inline-block;
+	padding-right:30px;
+	cursor:pointer;
+    
+}
+
+.navlinks ul li a{
+	text-decoration:none;
+	color:white;
+	font-size:17;
+	cursor:pointer;
+	text-transform:uppercase;
+	
+}
+
+.naveborder::after{
+	content:'';
+	width:0;
+	height:2px;
+	display:block;
+	background-color:white;
+	transition: width 0.3s ease;
+	
+}
+
+.naveborder:hover::after{
+	width:100%;
+}
+
+h1 {
+    text-align: center;
+  }
+  
+  #search, #update, #report {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  #reportResult {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

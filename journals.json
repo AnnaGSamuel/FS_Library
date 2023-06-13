@@ -1,0 +1,15 @@
+[
+    { 
+        "id": 1, 
+        "name": "Journal 1", 
+        "publicationDate": "2022-03-10",
+         "authors": ["Author 3", "Author 4"] 
+    },
+    { 
+       "id": 2, 
+       "name": "Journal 2", 
+       "publicationDate": "2023-01-05", 
+       "authors": ["Author 1", "Author 4"] 
+    }
+]
+

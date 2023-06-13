@@ -1,0 +1,16 @@
+<!-- booksReport.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report</title>
+</head>
+<body>
+  <h2>Report</h2>
+  
+    <ul>
+      <% Object.keys(results).forEach(key => { %>
+        <li>ID: <%= key %>, Name: <%= results[key] %></li>
+      <% }) %>
+    </ul>
+</body>
+</html>

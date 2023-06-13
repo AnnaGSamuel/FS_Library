@@ -1,0 +1,14 @@
+[
+    { 
+        "id": "1", 
+        "name": "Book 1",
+        "publicationDate": "2022-01-01",
+        "authors": ["Author 1", "Author 2"] 
+    },
+    { 
+        "id": "2", 
+        "name": "Book 2", 
+        "publicationDate": "2021-10-15", 
+        "authors": ["Author 2", "Author 3"] 
+    }
+]

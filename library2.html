@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="logo"><h1>Library Management System</h1></div>
+    
+    <div class="navlinks">
+       <ul>
+          <li><a class="naveborder" href="file://D:/FS_Library/home.html">Home</a></li>
+          <li><a class="naveborder" href="file://D:/FS_Library/library.html">Books</a></li>
+          <li><a class="naveborder" href="file://D:/FS_Library/library2.html">Journals</a></li> 
+       </ul>            
+    </div>
+  </div> 
+  
+  <div id="search">
+    <form action = "http://localhost:3000/search" method="GET">
+    <h2>Search</h2>
+    <input type="text" id="searchInput" placeholder="Enter search query" name="searchInput">
+      <button>Search</button>
+    </form>
+  </div>
+  
+  <div id="update">
+    <form action = "http://localhost:3000/update" method="GET">
+    <h2>Update</h2>
+    <input type="text" id="prev" placeholder="Enter ID" name="prev"> &nbsp; &nbsp;
+    <input type="text" id="updateInput" placeholder="Enter new name" name="updateInput">
+    <button>Update</button>
+  </form>
+  </div>
+
+  <div id="pubdate">
+    <form action = "http://localhost:3000/searchByDate" method="GET">
+    <h2>Search by publication date</h2>
+    <input type="text" id="dateInput" placeholder="Enter as YYYY-MM-DD" name="dateInput">
+    <button>Search</button>
+  </form>
+  </div>
+  
+  <div id="report">
+    <form action = "http://localhost:3000/reportJournals" method="GET">
+    <h2>Report</h2>
+    <button>Generate Report</button>
+  </form>
+    <div id="reportResult"></div>
+  </div>
+</body>
+</html>
