@@ -2,15 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Report</title>
+  <title>Books Report</title>
 </head>
 <body>
-  <h2>Report</h2>
+  <h2>Books Report</h2>
   
+  <% if (results.books.length > 0) { %>
     <ul>
-      <% Object.keys(results).forEach(key => { %>
-        <li>ID: <%= key %>, Name: <%= results[key] %></li>
-      <% }) %>
+      <% results.books.forEach(function(book) { %>
+        <li>ID: <%= book.id %>, &nbsp;&nbsp; Name: <%= book.name %>, &nbsp;&nbsp; Publication date: <%= book.publicationDate %>, &nbsp;&nbsp; Authors: <%= book.authors %></li>
+      <% }); %>
     </ul>
+  <% } if (results.books.length === 0) { %>
+    <p>No books found.</p>
+  <% } %>
 </body>
 </html>

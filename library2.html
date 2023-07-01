@@ -10,15 +10,15 @@
     
     <div class="navlinks">
        <ul>
-          <li><a class="naveborder" href="file://D:/FS_Library/home.html">Home</a></li>
-          <li><a class="naveborder" href="file://D:/FS_Library/library.html">Books</a></li>
-          <li><a class="naveborder" href="file://D:/FS_Library/library2.html">Journals</a></li> 
+          <li><a class="naveborder" href="file://E:/FS_Library/home.html">Home</a></li>
+          <li><a class="naveborder" href="file://E:/FS_Library/library.html">Books</a></li>
+          <li><a class="naveborder" href="file://E:/FS_Library/library2.html">Journals</a></li> 
        </ul>            
     </div>
   </div> 
   
   <div id="search">
-    <form action = "http://localhost:3000/search" method="GET">
+    <form action = "http://localhost:3000/searchJournals" method="GET">
     <h2>Search</h2>
     <input type="text" id="searchInput" placeholder="Enter search query" name="searchInput">
       <button>Search</button>
@@ -26,7 +26,7 @@
   </div>
   
   <div id="update">
-    <form action = "http://localhost:3000/update" method="GET">
+    <form action = "http://localhost:3000/updateJournals" method="GET">
     <h2>Update</h2>
     <input type="text" id="prev" placeholder="Enter ID" name="prev"> &nbsp; &nbsp;
     <input type="text" id="updateInput" placeholder="Enter new name" name="updateInput">
@@ -35,7 +35,7 @@
   </div>
 
   <div id="pubdate">
-    <form action = "http://localhost:3000/searchByDate" method="GET">
+    <form action = "http://localhost:3000/searchByDateJournals" method="GET">
     <h2>Search by publication date</h2>
     <input type="text" id="dateInput" placeholder="Enter as YYYY-MM-DD" name="dateInput">
     <button>Search</button>

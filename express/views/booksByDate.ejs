@@ -1,4 +1,3 @@
-<!-- booksByDate.ejs -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +6,15 @@
 <body>
   <h2>Books with Publication Date <%= date %></h2>
   
-  <% if (results.length > 0) { %>
+  <% if (results.books.length > 0) { %>
     <ul>
-      <% results.forEach(function(book) { %>
-        <li>ID: <%= book.id %>, Name: <%= book.name %></li>
+      <% results.books.forEach(function(book) { %>
+        <li>ID: <%= book.id %>, &nbsp;&nbsp; Name: <%= book.name %>, &nbsp;&nbsp; Authors: <%= book.authors %></li>
       <% }); %>
     </ul>
-  <% } if (results.length === 0) { %>
+  <% } else { %>
     <p>No books found for the given date.</p>
   <% } %>
+  
 </body>
 </html>

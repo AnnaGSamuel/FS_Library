@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search journals</title>
+</head>
+<body>
+    <h2>Search Results</h2>
+  
+  <% if (results.journals.length > 0) { %>
+    <ul>
+      <% results.journals.forEach(function(journal) { %>
+        <li>ID: <%= journal.id %>, &nbsp;&nbsp; Publication date: <%= journal.publicationDate %>, &nbsp;&nbsp; Authors: <%= journal.authors %></li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No journals found.</p>
+  <% } %>
+</body>
+</html>
