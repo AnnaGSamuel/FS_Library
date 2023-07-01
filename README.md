@@ -3,3 +3,5 @@ This is a Library Management System made using HTML, CSS, Javascript, Node JS fo
 
 It consists of 3 pages - a Home page, a Books page and a Journals page.
 The flat files used are books.json and journals.json.
+
+To display the results in a formatted way, EJS framework is used.
